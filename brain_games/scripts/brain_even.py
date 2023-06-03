@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 import prompt
 from random import randint
 
@@ -33,6 +36,7 @@ def even(name):
         if item == 3:
             print(f'Congratulation, {name}!')
 
-#if __name__ == '__main__':
-names = main()
-even(names)
+
+if __name__ == '__main__':
+    names = main()
+    even(names)
