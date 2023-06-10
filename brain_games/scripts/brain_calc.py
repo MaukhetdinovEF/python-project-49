@@ -39,7 +39,7 @@ def calc(name):
             print('Correct!')
         else:
             item = 4
-            print(f"'{join}' is wrong answer ;(. Correct answer was {result}'\nLet's try again, {name}!")
+            print(f"'{join}' is wrong answer ;(. Correct answer was '{result}'\nLet's try again, {name}!")
         if item == 3:
             print(f'Congratulation, {name}!')
 
