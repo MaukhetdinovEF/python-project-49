@@ -3,7 +3,6 @@
 
 import prompt
 from random import randint
-import math
 
 
 def main():
@@ -18,25 +17,31 @@ def welcome_user():
     return name
 
 
-def NOD(name):
-    print('Find the greatest common divisor of given numbers.')
+def prime(name):
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     item = 0
     while item < 3:
         number1 = randint(1, 50)
-        number2 = randint(1, 50)
-        print(f'Question: {number1} {number2}')
-        join = prompt.integer('Your answer: ')
-        g_c_d = math.gcd(number1, number2)
-        if join == g_c_d:
+        k = 0
+        for i in range(2, number1 // 2+1):
+            if number1 % i == 0:
+                k += 1
+        if k == 0:
+            unswer = 'yes'
+        else:
+            unswer = 'no'
+        print(f'Question: {number1}')
+        join = prompt.string('Your answer: ')
+        if join.lower() == unswer:
             item += 1
             print('Correct!')
         else:
             item = 4
-            print(f"'{join}' is wrong answer ;(. Correct answer was '{g_c_d}'\nLet's try again, {name}!")
+            print(f"'{join}' is wrong answer ;(. Correct answer was '{unswer}'\nLet's try again, {name}!")
         if item == 3:
             print(f'Congratulation, {name}!')
 
 
 if __name__ == '__main__':
     names = main()
-    NOD(names)
+    prime(names)

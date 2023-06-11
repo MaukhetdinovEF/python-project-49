@@ -3,8 +3,6 @@
 
 import prompt
 from random import randint
-import random
-import math
 
 
 def main():
@@ -25,14 +23,14 @@ def progression(name):
     while item < 3:
         num1 = randint(1, 10)
         num2 = randint(100, 120)
-        num_prog = randint (1, 8)
+        num_prog = randint(1, 8)
         numbers = []
         for i in range(num1, num2, num_prog):
             numbers.append(i)
         number1 = randint(0, 9)
         number2 = numbers[number1]
         numbers[number1] = '..'
-        list_numbers = " ".join(map(str,numbers[0:10]))
+        list_numbers = " ".join(map(str, numbers[0:10]))
         print(f'Question: {list_numbers}')
         join = prompt.integer('Your answer: ')
         if join == number2:
