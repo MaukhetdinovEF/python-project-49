@@ -24,15 +24,15 @@ def even(name):
         number = randint(1, 9999999)
         print(f'Question: {number}')
         join = prompt.string('Your answer: ')
-        if (number % 2 == 0 and join.lower() == 'yes') or (number % 2 == 1 and join.lower() == 'no'):
+        if number % 2 == 0:
+            unswer = 'yes'
+        else: unswer = 'no'  
+        if unswer == join.lower():
             item += 1
             print('Correct!')
-        elif (join.lower() == 'yes'):
+        else:
             item = 4
-            print(f"'{join}' is wrong answer ;(. Correct answer was 'no'\nLet's try again, {name}!")
-        elif (join.lower() == 'no'):
-            item = 4
-            print(f"'{join}' is wrong answer ;(. Correct answer was 'yes'\nLet's try again, {name}!")
+            print(f"'{join}' is wrong answer ;(. Correct answer was {unswer}\nLet's try again, {name}!")
         if item == 3:
             print(f'Congratulation, {name}!')
 
