@@ -22,8 +22,8 @@ def even(name):
     item = 0
     while item < 3:
         number = randint(1, 9999999)
-        print(f'Question: {number}')
-        join = prompt.string('Your answer: ')
+        print(f"Question: {number}")
+        join = prompt.string("Your answer: ")
         if number % 2 == 0:
             unswer = 'yes'
         else: unswer = 'no'  
@@ -32,7 +32,7 @@ def even(name):
             print('Correct!')
         else:
             item = 4
-            print(f"'{join}' is wrong answer ;(. Correct answer was {unswer}\nLet's try again, {name}!")
+            print(f"'{join}' is wrong answer ;(. Correct answer was '{unswer}'\nLet's try again, {name}!")
         if item == 3:
             print(f'Congratulation, {name}!')
 
