@@ -1,24 +1,12 @@
-#!/usr/bin/env python3
-
-
 import prompt
 from random import randint
 import math
 
 
-def main():
+def game_gcd():
     print('Welcome to the Brain Games!')
-    name = welcome_user()
-    return name
-
-
-def welcome_user():
     name = prompt.string('May I have your name ? ')
     print(f'Hello, {name}!')
-    return name
-
-
-def NOD(name):
     print('Find the greatest common divisor of given numbers.')
     item = 0
     while item < 3:
@@ -35,8 +23,3 @@ def NOD(name):
             print(f"'{join}' is wrong answer ;(. Correct answer was '{g_c_d}'\nLet's try again, {name}!")
         if item == 3:
             print(f'Congratulation, {name}!')
-
-
-if __name__ == '__main__':
-    names = main()
-    NOD(names)

@@ -14,7 +14,7 @@ def game_even():
         join = prompt.string("Your answer: ")
         if number % 2 == 0:
             unswer = 'yes'
-        else: unswer = 'no'  
+        else: unswer = 'no'
         if unswer == join.lower():
             item += 1
             print('Correct!')
@@ -23,4 +23,3 @@ def game_even():
             print(f"'{join}' is wrong answer ;(. Correct answer was '{unswer}'\nLet's try again, {name}!")
         if item == 3:
             print(f'Congratulation, {name}!')
-

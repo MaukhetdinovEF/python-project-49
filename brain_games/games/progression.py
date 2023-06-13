@@ -1,23 +1,11 @@
-#!/usr/bin/env python3
-
-
 import prompt
 from random import randint
 
 
-def main():
+def game_progression():
     print('Welcome to the Brain Games!')
-    name = welcome_user()
-    return name
-
-
-def welcome_user():
     name = prompt.string('May I have your name ? ')
     print(f'Hello, {name}!')
-    return name
-
-
-def progression(name):
     print('What number is missing in the progression?')
     item = 0
     while item < 3:
@@ -41,8 +29,3 @@ def progression(name):
             print(f"'{join}' is wrong answer ;(. Correct answer was '{number2}'\nLet's try again, {name}!")
         if item == 3:
             print(f'Congratulation, {name}!')
-
-
-if __name__ == '__main__':
-    names = main()
-    progression(names)
