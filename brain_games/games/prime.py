@@ -3,6 +3,8 @@ from random import randint
 
 
 def its_prime(num):
+    if num < 2:
+        return 'no'
     k = 0
     for i in range(2, num // 2 + 1):
         if num % i == 0:
