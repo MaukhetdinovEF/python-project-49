@@ -4,7 +4,7 @@ from random import randint
 
 def its_prime(num):
     k = 0
-    for i in range(2, num // 2+1):
+    for i in range(2, num // 2 + 1):
         if num % i == 0:
             k += 1
     if k == 0:
@@ -32,7 +32,6 @@ def game_prime():
             print(
                 f"'{join}' is wrong answer ;(. "
                 f"Correct answer was '{prime}'\nLet's "
-                f"try again, {name}!"
-                )
+                f"try again, {name}!")
         if item == 3:
             print(f'Congratulations, {name}!')

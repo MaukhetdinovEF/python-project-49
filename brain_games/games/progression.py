@@ -29,7 +29,6 @@ def game_progression():
             print(
                 f"'{join}' is wrong answer ;(. "
                 f"Correct answer was '{number2}'\nLet's "
-                f"try again, {name}!"
-                )
+                f"try again, {name}!")
         if item == 3:
             print(f'Congratulations, {name}!')
