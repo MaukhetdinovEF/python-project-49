@@ -20,6 +20,10 @@ def game_gcd():
             print('Correct!')
         else:
             item = 4
-            print(f"'{join}' is wrong answer ;(. Correct answer was '{g_c_d}'\nLet's try again, {name}!")
+            print(
+                f"'{join}' is wrong answer ;(. "
+                f"Correct answer was '{g_c_d}'\nLet's "
+                f"try again, {name}!"
+                )
         if item == 3:
             print(f'Congratulations, {name}!')

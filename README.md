@@ -19,7 +19,7 @@ GAME
 $ brain-even
 https://asciinema.org/a/591308
 
-& brain-calc
+$ brain-calc
 https://asciinema.org/a/591309
 
 $ brain-progression
