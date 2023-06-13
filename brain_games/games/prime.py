@@ -27,4 +27,4 @@ def game_prime():
             item = 4
             print(f"'{join}' is wrong answer ;(. Correct answer was '{unswer}'\nLet's try again, {name}!")
         if item == 3:
-            print(f'Congratulation, {name}!')
+            print(f'Congratulations, {name}!')

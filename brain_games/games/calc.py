@@ -29,4 +29,4 @@ def game_calc():
             item = 4
             print(f"'{join}' is wrong answer ;(. Correct answer was '{result}'\nLet's try again, {name}!")
         if item == 3:
-            print(f'Congratulation, {name}!')
+            print(f'Congratulations, {name}!')

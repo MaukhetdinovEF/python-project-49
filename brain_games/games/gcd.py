@@ -22,4 +22,4 @@ def game_gcd():
             item = 4
             print(f"'{join}' is wrong answer ;(. Correct answer was '{g_c_d}'\nLet's try again, {name}!")
         if item == 3:
-            print(f'Congratulation, {name}!')
+            print(f'Congratulations, {name}!')
